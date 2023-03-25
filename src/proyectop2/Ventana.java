@@ -1,11 +1,12 @@
-
 package proyectop2;
 
-import javax.swing.*;
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import javax.swing.*;
 
 public class Ventana extends JFrame {
+
   // Inicialización de la ventana
   public Ventana(String title) {
     // Establecer el título de la ventana
@@ -26,14 +27,29 @@ public class Ventana extends JFrame {
 
     // Creamos un arreglo para almacenar todos los botones del frame
     JButton[] botones = new JButton[9];
+    String[] nombresBotones = {
+      "Reina", "Domino", "Pelua",
+      "Quesillo", "Chicha", "Pabellon",
+      "Cachapa", "Pan", "Patacon"
+    };
 
     // Iteramos por cada botón
-    for (int i = 0; i < 9; i++)
-    {
+    for (int i = 0; i < 9; i++) {
       // Crear botón "i"
       botones[i] = new JButton();
       // Establecer borde del botón "i" de color negro
       botones[i].setBorder(new javax.swing.border.LineBorder(Color.BLACK));
+
+      // Crear variable del nombre del plato, en el orden del array
+      String nombreBoton = nombresBotones[i];
+      // Asignar dicho nombre del respectivo plato al botón
+      botones[i].setName(nombreBoton);
+
+      // Agregar un oyente de click al botón
+      botones[i].addActionListener((ActionEvent ae) -> {
+        // System.out.println(nombreBoton);
+      });
+
       // Anexar botón al frame
       this.add(botones[i]);
     }
