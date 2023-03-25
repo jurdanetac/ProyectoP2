@@ -4,7 +4,6 @@ package proyectop2;
 import javax.swing.*;
 import java.awt.Color;
 import java.awt.GridLayout;
-import javax.swing.border.LineBorder;
 
 public class Ventana extends JFrame {
   // Inicialización de la ventana
@@ -34,7 +33,7 @@ public class Ventana extends JFrame {
       // Crear botón "i"
       botones[i] = new JButton();
       // Establecer borde del botón "i" de color negro
-      botones[i].setBorder(new LineBorder(Color.BLACK));
+      botones[i].setBorder(new javax.swing.border.LineBorder(Color.BLACK));
       // Anexar botón al frame
       this.add(botones[i]);
     }
