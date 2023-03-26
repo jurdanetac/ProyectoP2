@@ -52,8 +52,79 @@ public class Ventana extends JFrame {
       boton.setIcon(icon);
 
       // Agregar un oyente de click al botón
-      botones[i].addActionListener((ActionEvent ae) -> {
-        // System.out.println(nombreBoton);
+      boton.addActionListener((ActionEvent ae) -> {
+        // Ocultamos momentáneamente el menú principal
+        this.setVisible(false);
+
+        switch (nombreBoton) {
+          case "Reina":
+            JOptionPane.showMessageDialog(null,
+                "Hola",
+                nombreBoton,
+                JOptionPane.INFORMATION_MESSAGE,
+                null
+            );break;
+          case "Domino":
+            JOptionPane.showMessageDialog(null,
+                "Hola",
+                nombreBoton,
+                JOptionPane.INFORMATION_MESSAGE,
+                null
+            );break;
+          case "Pelua":
+            JOptionPane.showMessageDialog(null,
+                "Hola",
+                nombreBoton,
+                JOptionPane.INFORMATION_MESSAGE,
+                null
+            );break;
+          case "Quesillo":
+            JOptionPane.showMessageDialog(null,
+                "Hola",
+                nombreBoton,
+                JOptionPane.INFORMATION_MESSAGE,
+                null
+            );break;
+          case "Chicha":
+            JOptionPane.showMessageDialog(null,
+                "Hola",
+                nombreBoton,
+                JOptionPane.INFORMATION_MESSAGE,
+                null
+            );break;
+          case "Pabellon":
+            JOptionPane.showMessageDialog(null,
+                "Hola",
+                nombreBoton,
+                JOptionPane.INFORMATION_MESSAGE,
+                null
+            );break;
+          case "Cachapa":
+            JOptionPane.showMessageDialog(null,
+                "Hola",
+                nombreBoton,
+                JOptionPane.INFORMATION_MESSAGE,
+                null
+            );break;
+          case "Pan":
+            JOptionPane.showMessageDialog(null,
+                "Hola",
+                nombreBoton,
+                JOptionPane.INFORMATION_MESSAGE,
+                null
+            );break;
+          default:
+            // Patacon
+            JOptionPane.showMessageDialog(null,
+              "Hola",
+              nombreBoton,
+              JOptionPane.INFORMATION_MESSAGE,
+              null
+              );break;
+        }
+
+        // Reestablecemos el menú principal nuevamente
+        this.setVisible(true);
       });
 
       // Anexar botón al frame
