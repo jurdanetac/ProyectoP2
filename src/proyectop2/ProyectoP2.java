@@ -1,8 +1,7 @@
-
-// Incluimos las demás clases del paquete
 package proyectop2;
 
 public class ProyectoP2 {
+
   // Aquí comienza la ejecución del programa
   public static void main(String[] args) {
     // Creamos el objeto de la ventana principal

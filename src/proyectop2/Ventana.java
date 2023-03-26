@@ -11,10 +11,8 @@ public class Ventana extends JFrame {
   public Ventana(String title) {
     // Establecer el título de la ventana
     this.setTitle(title);
-    // Hacemos que la ventana sea visible
-    this.setVisible(true);
     // Establecer el tamaño de la ventana
-    this.setSize(602, 602);
+    this.setSize(750, 750);
     // Centrar ventana
     this.setLocationRelativeTo(null);
     // Terminar proceso al cerrar la ventana
@@ -37,13 +35,21 @@ public class Ventana extends JFrame {
     for (int i = 0; i < 9; i++) {
       // Crear botón "i"
       botones[i] = new JButton();
-      // Establecer borde del botón "i" de color negro
-      botones[i].setBorder(new javax.swing.border.LineBorder(Color.BLACK));
+      // Hacemos que la referencia al botón seleccionado sea más sencilla
+      JButton boton = botones[i];
 
       // Crear variable del nombre del plato, en el orden del array
       String nombreBoton = nombresBotones[i];
       // Asignar dicho nombre del respectivo plato al botón
-      botones[i].setName(nombreBoton);
+      boton.setName(nombreBoton);
+
+      // Establecer borde del botón "i" de color negro
+      boton.setBorder(new javax.swing.border.LineBorder(Color.BLACK));
+
+      // Crear ícono del botón
+      ImageIcon icon = new ImageIcon(getClass().getResource("images/250/" + nombreBoton + ".png"));
+      // Establecer ícono
+      boton.setIcon(icon);
 
       // Agregar un oyente de click al botón
       botones[i].addActionListener((ActionEvent ae) -> {
@@ -56,5 +62,9 @@ public class Ventana extends JFrame {
 
     // Desactivamos la posibilidad de alterar el tamaño por defecto de la ventana
     this.setResizable(false);
+
+    // Hacemos que la ventana sea visible
+    this.setVisible(true);
   }
+
 }
