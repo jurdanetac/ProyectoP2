@@ -1,5 +1,6 @@
 package proyectop2;
 
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -25,12 +26,19 @@ public class ProyectoP2 {
       }
     }
 
-    // Color del fondo de los paneles
-    // UIManager.put("OptionPane.background", Color.DARK_GRAY);
-    // UIManager.put("Panel.background", Color.DARK_GRAY);
-
     // Texto por defecto en el botón "Ok" de JOptionPane
     UIManager.put("OptionPane.okButtonText", "Avanzar");
+
+    // Mostrar recordatorio previo a receta
+    JOptionPane.showMessageDialog(
+        null,
+        "Los ingredientes pueden variar según cada receta.",
+        // Título
+        "Recordatorio",
+        // Ícono
+        JOptionPane.INFORMATION_MESSAGE,
+        null
+    );
 
     // Correo
     // JOptionPane.showMessageDialog(null,

@@ -57,32 +57,11 @@ public class Window extends JFrame {
       // Agregar un oyente de click al botón
       boton.addActionListener((ActionEvent ae) -> {
         // Ocultamos momentáneamente el menú principal
-        // this.setVisible(false);
+        this.setVisible(false);
 
         // Crear ícono de la bandera
         ImageIcon flag = new ImageIcon(getClass().getResource("images/flag32.png"));
 
-        // Mostrar recordatorio previo a receta
-        // JOptionPane.showMessageDialog(
-        //     null,
-        //     "Los ingredientes pueden variar según la receta.",
-        //     // Título
-        //     "Recordatorio",
-        //     // Ícono
-        //     JOptionPane.INFORMATION_MESSAGE,
-        //     null
-        // );
-        // Preparación
-        // JOptionPane.showMessageDialog(null,
-        // "<html><font·color=#e59f00>INGR</font><font·color=#001f7e>EDIE</font><font·color=#d00c27>NTES</font>:</html>\n"
-        // + ""
-        // Título
-        // "Preparación",
-        //     // Ícono
-        //     JOptionPane.INFORMATION_MESSAGE
-        // ,
-        //     null
-        // );
         switch (nombreBoton) {
           case "Reina":
             // Ingredientes
