@@ -6,4 +6,14 @@ Presentado a los 31 días del mes de marzo de 2023, en la ciudad de Maracaibo, E
 ### IMPORTANTE
 Los pixel arts de los platos típicos venezolanos **NO** me pertenecen, todos los créditos a su respectiva autora [SailorGlitch](https://www.instagram.com/sailorglitch).
 
-![Vista del menu principal](./muestra.png)
+## Menú Principal
+
+![Vista del menu principal](./previews/menuprincipal.png)
+
+## Ingredientes
+
+![Vista del menu principal](./previews/ingredientes.png)
+
+## Preparación
+
+![Vista del menu principal](./previews/preparacion.png)
