@@ -10,6 +10,7 @@ public class ProyectoP2 {
   // Aquí comienza la ejecución del programa
   public static void main(String[] args) {
 
+    // Establecer tema de la aplicación
     try {
       for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
         if ("Nimbus".equals(info.getName())) {
@@ -39,14 +40,6 @@ public class ProyectoP2 {
         JOptionPane.INFORMATION_MESSAGE,
         null
     );
-
-    // Correo
-    // JOptionPane.showMessageDialog(null,
-    //     "Hola",
-    //     "Título",
-    //     JOptionPane.INFORMATION_MESSAGE,
-    //     null
-    // );
 
     // Creamos el objeto de la ventana principal
     Window window = new Window("Recetario");
